@@ -12,7 +12,7 @@
 
 			<?php //get_template_part('partials/video'); ?>
 
-			<?php get_template_part('partials/tiles'); ?>
+			<?php //get_template_part('partials/tiles'); ?>
 			<?php //get_template_part('partials/tiles_of_posts'); ?>
 
 			<?php //get_template_part('partials/hero'); ?>

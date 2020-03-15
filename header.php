@@ -18,7 +18,7 @@
 
 <body <?php body_class(); ?>>
 
-<?php get_template_part('partials/help_widget'); ?>
+<?php //get_template_part('partials/help_widget'); ?>
 
 <?php get_template_part('partials/top_info_navbar'); ?>
 
