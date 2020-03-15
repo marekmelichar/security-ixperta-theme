@@ -527,7 +527,7 @@ h1:after {
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
-  height: 3px;
+  height: 4px;
   background-color: #00B388;
 }
 
@@ -554,7 +554,7 @@ h2:after {
   bottom: -10px;
   left: 0;
   width: 100px;
-  height: 3px;
+  height: 4px;
   background-color: #00B388;
 }
 
@@ -568,7 +568,7 @@ h2:after {
   font-size: 1rem;
   font-family: 'camptonmedium', sans-serif;
   line-height: 1.25;
-  color: #00B388;
+  color: #001A70;
 }
 
 .h4, h4 {
@@ -642,6 +642,41 @@ a.green-text {
 .white-text,
 a.white-text {
   color: #fff;
+}
+
+
+
+
+
+
+
+
+.fz36 {
+  font-size: 2.25rem;
+}
+
+.fz22 {
+  font-size: 1.375rem;
+}
+
+.fz26 {
+  font-size: 1.625rem;
+}
+
+.fz24 {
+  font-size: 1.5rem;
+}
+
+.fz20 {
+  font-size: 1.25rem;
+}
+
+.fz16 {
+  font-size: 1rem;
+}
+
+.fz12 {
+  font-size: 0.75rem;
 }
 
 
@@ -1148,6 +1183,59 @@ html[lang="de-DE"] .primary-menu ul li:after {
 
 
 
+/* BANNER */
+
+#banner {
+  position: relative;
+  height: 450px;
+}
+
+#banner .filter {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#banner .content {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#banner h1 {
+  font-family: 'camptonbook', sans-serif;
+  position: relative;
+}
+
+#banner h1:after {
+  background-color: #fff;
+}
+
+#banner h2 {
+  font-family: 'camptonbook', sans-serif;
+  position: relative;
+}
+
+#banner h2:after {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* STRIPE WITH BACKGROUND IMAGE */
 
@@ -1204,7 +1292,7 @@ footer h2:after {
   bottom: -10px;
   left: 0;
   width: 80px;
-  height: 3px;
+  height: 4px;
   background-color: #001A70;
 }
 
@@ -1991,7 +2079,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
-    height: 3px;
+    height: 4px;
     background-color: #00B388;
 }
 
@@ -2048,7 +2136,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
-    height: 3px;
+    height: 4px;
     background-color: #00B388;
 }
 
@@ -2079,7 +2167,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 #services .bg_color_stripe_repeater .svg,
 #why_connect_with_us .bg_color_stripe_repeater .svg {
   width: 70px;
-  margin: 0 auto;
+  margin: 1rem auto 1.5rem auto;
 }
 
 #services .bg_color_stripe_repeater .heading {
@@ -2088,9 +2176,9 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #services .bg_color_stripe_repeater .heading .head,
 #why_connect_with_us .bg_color_stripe_repeater .heading .head {
-  font-family: 'camptonmedium', sans-serif;
+  font-family: 'camptonsemibold', sans-serif;
   font-weight: normal;
-  text-align: left;
+  text-align: center;
 }
 
 #services .bg_color_stripe_repeater .the-little-plus,
@@ -2111,6 +2199,12 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #why_connect_with_us .bg_color_stripe_repeater .content {
   font-size: 0.75rem;
+}
+
+#services .bg_color_stripe_repeater .content p,
+#services .bg_color_stripe_repeater .content a {
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
 }
 
 
