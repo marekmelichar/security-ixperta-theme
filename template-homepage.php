@@ -12,8 +12,8 @@
 
 			<?php get_template_part('partials/banner'); ?>
 			<?php get_template_part('partials/services'); ?>
+			<?php get_template_part('partials/products'); ?>
 
-			
 			<?php //get_template_part('partials/video'); ?>
 
 			<?php //get_template_part('partials/tiles'); ?>
@@ -23,12 +23,12 @@
 
 			<?php //get_template_part('partials/stripe_with_background_image'); ?>
 
-			<?php get_template_part('partials/posts_query_stripe'); ?>
+			<?php //get_template_part('partials/posts_query_stripe'); ?>
 
 
 			<!-- <div class="gray-gradient-bg"> -->
 
-				<?php get_template_part('partials/products'); ?>
+				
 
 				<?php //get_template_part('partials/management'); ?>
 				<?php get_template_part('partials/about_us'); ?>

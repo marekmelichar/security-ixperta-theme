@@ -2225,12 +2225,12 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 /* PRODUCTS */
 
 #products {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 3rem 0;
   position: relative;
-  border-bottom: 1px solid #001A70;
+  /* border-bottom: 1px solid #001A70; */
 }
 
-#products:after {
+/* #products:after {
   display: block;
   content: '';
   height: 1px;
@@ -2240,7 +2240,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 #products h2 {
   text-align: center;
@@ -2248,18 +2248,19 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #products .h2:after,
 #products h2:after {
-    left: 50%;
-    transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-#products .bg_color_stripe_repeater {
+/* #products .bg_color_stripe_repeater {
   margin-top: 2rem;
-}
+} */
 
 #products .svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
 }
 
 #products .content {
@@ -2268,6 +2269,42 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #products .arrow-green-circle {
   margin: 1rem auto;
+}
+
+#products .products_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#products .products_wrapper .product {
+  width: 20rem;
+}
+
+
+/* #products .svg {
+  height: 80px !important;
+} */
+
+#products .container {
+  position: relative;
+}
+
+#products .prevArrow {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+#products .nextArrow {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  cursor: pointer;
+  font-size: 3rem;
 }
 
 
@@ -3297,28 +3334,3 @@ a.reference-tiles__tile:before {
 
 
 
-
-/* #rapid7_nexpose */
-#products .svg {
-  height: 80px !important;
-}
-
-#products .container {
-  position: relative;
-}
-
-#products .prevArrow {
-  position: absolute;
-  top: 50px;
-  left: -50px;
-  cursor: pointer;
-  font-size: 3rem;
-}
-
-#products .nextArrow {
-  position: absolute;
-  top: 50px;
-  right: -50px;
-  cursor: pointer;
-  font-size: 3rem;
-}

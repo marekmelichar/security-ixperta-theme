@@ -219,13 +219,13 @@
 
 
 		// ============================================================================ SLIDE-OUT HELP IN SIDEBAR, DESKTOP
-		$('#helpWidget h2').on('click', function () {
-			$('#helpWidget').toggleClass('opened')
-		})
+		// $('#helpWidget h2').on('click', function () {
+		// 	$('#helpWidget').toggleClass('opened')
+		// })
 
-		$('#helpWidget .close').on('click', function () {
-			$('#helpWidget').removeClass('opened')
-		})
+		// $('#helpWidget .close').on('click', function () {
+		// 	$('#helpWidget').removeClass('opened')
+		// })
 
 		// ============================================================================ SLIDE-OUT HELP IN MOBILE
 		// $('#helpWidgetMobile h2').on('click', function() {
@@ -483,81 +483,78 @@
     //   nextArrow: $('#products .nextArrow')
     // })
 
-    equalheight('#products .svg');
+    // equalheight('#products img');
 
+		// PRODUCTS
 
+		// // desktop
+		// if (window.innerWidth > 960) {
 
+		// 	// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
 
-		// REFERENCES
+		// 	$('#products .bg_color_stripe_repeater .row').slick({
+		// 		dots: false,
+		// 		arrows: true,
+		// 		infinite: true,
+		// 		speed: 300,
+		// 		autoplay: true,
+		// 		autoplaySpeed: 4000,
+		// 		slidesToShow: 5,
+		// 		prevArrow: $('#products .prevArrow'),
+		// 		nextArrow: $('#products .nextArrow')
+		// 	})
+		// }
 
-		// desktop
-		if (window.innerWidth > 960) {
+		// // tablet
+		// if (window.innerWidth >= 768 && window.innerWidth < 960) {
 
-			// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
+		// 	// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
 
-			$('#products .bg_color_stripe_repeater .row').slick({
-				dots: false,
-				arrows: true,
-				infinite: true,
-				speed: 300,
-				autoplay: true,
-				autoplaySpeed: 4000,
-				slidesToShow: 5,
-				prevArrow: $('#products .prevArrow'),
-				nextArrow: $('#products .nextArrow')
-			})
-		}
+		// 	$('#products .bg_color_stripe_repeater .row').slick({
+		// 		dots: false,
+		// 		arrows: false,
+		// 		infinite: true,
+		// 		speed: 300,
+		// 		autoplay: true,
+		// 		autoplaySpeed: 1000,
+		// 		slidesToShow: 2
+		// 	})
 
-		// tablet
-		if (window.innerWidth >= 768 && window.innerWidth < 960) {
+		// }
 
-			// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
+		// // medium / large phone
+		// if (window.innerWidth < 768 && window.innerWidth > 320) {
 
-			$('#products .bg_color_stripe_repeater .row').slick({
-				dots: false,
-				arrows: false,
-				infinite: true,
-				speed: 300,
-				autoplay: true,
-				autoplaySpeed: 1000,
-				slidesToShow: 2
-			})
+		// 	// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
 
-		}
+		// 	$('#products .bg_color_stripe_repeater .row').slick({
+		// 		dots: false,
+		// 		arrows: false,
+		// 		infinite: true,
+		// 		speed: 300,
+		// 		autoplay: true,
+		// 		autoplaySpeed: 1000,
+		// 		slidesToShow: 1
+		// 	})
 
-		// medium / large phone
-		if (window.innerWidth < 768 && window.innerWidth > 320) {
+		// }
 
-			// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
+		// // small phone
+		// if (window.innerWidth <= 320) {
 
-			$('#products .bg_color_stripe_repeater .row').slick({
-				dots: false,
-				arrows: false,
-				infinite: true,
-				speed: 300,
-				autoplay: true,
-				autoplaySpeed: 1000,
-				slidesToShow: 1
-			})
+		// 	// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
 
-		}
+		// 	$('#products .bg_color_stripe_repeater .row').slick({
+		// 		dots: false,
+		// 		arrows: false,
+		// 		infinite: true,
+		// 		speed: 300,
+		// 		autoplay: true,
+		// 		autoplaySpeed: 1000,
+		// 		slidesToShow: 1
+		// 	})
 
-		// small phone
-		if (window.innerWidth <= 320) {
-
-			// $('#products .bg_color_stripe_repeater .row .col:first-child').addClass('active')
-
-			$('#products .bg_color_stripe_repeater .row').slick({
-				dots: false,
-				arrows: false,
-				infinite: true,
-				speed: 300,
-				autoplay: true,
-				autoplaySpeed: 1000,
-				slidesToShow: 1
-			})
-
-		}
+		// }
 
 
 
