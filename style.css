@@ -1287,7 +1287,7 @@ footer h2 {
 footer .h2:after,
 footer h2:after {
   content: '';
-  display: block;
+  display: none;
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -1306,8 +1306,9 @@ footer a {
 }
 
 .socials svg {
-  width: 40px;
+  width: 30px;
   margin-right: 10px;
+  height: 30px;
 }
 
 .socials a:last-child svg {
@@ -1353,6 +1354,10 @@ footer a {
 footer ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+.footer-spacer {
+  margin: 55px 0 0 0;
 }
 
 
@@ -1531,7 +1536,21 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #about_us {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 3rem 0;
+  background-color: #00B388;
+  color: #fff;
+}
+
+#about_us a {
+  color: #001A70;
+}
+
+#about_us .phone a {
+  color: #fff;
+}
+
+#about_us .desc {
+  color: #001A70;
 }
 
 #about_us h2 {
@@ -1541,6 +1560,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 #about_us h2:after {
   left: 50%;
   transform: translateX(-50%);
+  background-color: #fff;
 }
 
 #about_us h3 {
@@ -1562,11 +1582,13 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 }
 
 #about_us .member .social-icon {
-  width: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 #about_us .member .social-icon svg {
-  width: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 #about_us .member img {
@@ -1579,6 +1601,9 @@ html[lang="de-DE"] #helpWidget h2.rotate {
   padding: 0 1rem 0 0;
   list-style-type: none;
   display: inline-block;
+  left: -50px;
+  top: 115px;
+  position: absolute;
 }
 
 #about_us .col.only_one_col {
@@ -2227,20 +2252,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 #products {
   padding: 1.5rem 0 3rem 0;
   position: relative;
-  /* border-bottom: 1px solid #001A70; */
 }
-
-/* #products:after {
-  display: block;
-  content: '';
-  height: 1px;
-  width: 100%;
-  background: #001A70;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} */
 
 #products h2 {
   text-align: center;
@@ -2251,10 +2263,6 @@ html[lang="de-DE"] #helpWidget h2.rotate {
   left: 50%;
   transform: translateX(-50%);
 }
-
-/* #products .bg_color_stripe_repeater {
-  margin-top: 2rem;
-} */
 
 #products .svg {
   display: flex;
@@ -2281,11 +2289,6 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 #products .products_wrapper .product {
   width: 20rem;
 }
-
-
-/* #products .svg {
-  height: 80px !important;
-} */
 
 #products .container {
   position: relative;

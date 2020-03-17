@@ -1,8 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-viewBox="0 0 635 635"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <g id="Vrstva_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path fill="#001A70" d="M588 0l-541 0c-26,0 -47,21 -47,46l0 543c0,25 21,46 47,46l541 0c26,0 47,-21 47,-46l0 -543c0,-25 -21,-46 -47,-46zm-400 541l-94 0 0 -303 94 0 0 303zm-47 -344c-30,0 -54,-25 -54,-55 0,-30 24,-55 54,-55 30,0 55,25 55,55 0,30 -25,55 -55,55zm400 344l-94 0 0 -147c0,-35 -1,-81 -49,-81 -49,0 -56,39 -56,78l0 150 -95 0 0 -303 91 0 0 41 1 0c13,-23 43,-48 89,-48 95,0 113,62 113,144l0 166z"/>
- </g>
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      #linkedin .a{fill:#0077b5;}
+      #linkedin .b{fill:#fefefe;}
+    </style>
+  </defs>
+  <path class="a" d="M22.224,0H1.772A1.752,1.752,0,0,0,0,1.729V22.271A1.752,1.752,0,0,0,1.772,24H22.224A1.756,1.756,0,0,0,24,22.271V1.729A1.756,1.756,0,0,0,22.224,0Z"/>
+  <path class="b" d="M695.065,699A2.065,2.065,0,1,1,693,701.065,2.067,2.067,0,0,1,695.065,699Zm-1.781,5.693h3.562V716.15h-3.562Z" transform="translate(-689.726 -695.698)"/>
+  <path class="b" d="M1979,1844.283h3.416v1.568h.047a3.738,3.738,0,0,1,3.369-1.852c3.6,0,4.271,2.372,4.271,5.457v6.284h-3.557v-5.57c0-1.328-.024-3.038-1.852-3.038-1.852,0-2.135,1.446-2.135,2.943v5.665H1979Z" transform="translate(-1969.65 -1835.288)"/>
 </svg>

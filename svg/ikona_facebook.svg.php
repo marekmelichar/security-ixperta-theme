@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-viewBox="0 0 632 632"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <g id="Vrstva_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path fill="#001A70" fill-rule="nonzero" d="M597 0l-562 0c-19,0 -35,16 -35,35l0 562c0,20 16,35 35,35l303 0 0 -245 -83 0 0 -95 83 0 0 -70c0,-82 50,-127 122,-127 35,0 65,3 74,4l0 86 -51 0c-39,0 -47,18 -47,46l0 61 95 0 -13 95 -82 0 0 245 161 0c20,0 35,-15 35,-35l0 -562c0,-19 -15,-35 -35,-35z"/>
- </g>
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      #facebook .a{fill:#4267b2;}
+    </style>
+  </defs>
+  <path class="a" d="M22.671,0H1.329A1.345,1.345,0,0,0,0,1.329V22.671A1.321,1.321,0,0,0,1.329,24H12.835V14.7H9.684V11.089h3.152V8.43c0-3.114,1.9-4.823,4.633-4.823a26.973,26.973,0,0,1,2.81.152V7.025H18.342c-1.481,0-1.785.684-1.785,1.747v2.316h3.608L19.671,14.7H16.557V24h6.114A1.3,1.3,0,0,0,24,22.671V1.329A1.321,1.321,0,0,0,22.671,0Z"/>
 </svg>

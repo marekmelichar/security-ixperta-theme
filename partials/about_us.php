@@ -5,7 +5,9 @@
         <?php if(get_field('about_us_heading')) { ?>
           <h2><?php echo the_field('about_us_heading'); ?></h2>
         <?php } ?>
-        <h3><?php echo the_field('about_us_subheading'); ?></h3>
+        <?php if(get_field('about_us_subheading')) { ?>
+          <h3><?php echo the_field('about_us_subheading'); ?></h3>
+        <?php } ?>
       </div>
     </div>
 
@@ -38,11 +40,14 @@
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   </div>
                   <div class="col-8">
-                    <h2><?php echo $name; ?></h2>
+                    <h2>
+                      <?php echo $name; ?>
+                      <div class="phone">
+                        <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                      </div>
+                    </h2>
                     <div class="desc"><?php echo $description; ?></div>
-                    <div class="phone">
-                      <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
-                    </div>
+                    
                     <div class="mail">
                       <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                     </div>
