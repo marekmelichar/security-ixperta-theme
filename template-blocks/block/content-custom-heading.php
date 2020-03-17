@@ -26,22 +26,23 @@ $id = 'customheading-' . $block['id'];
 
 <style type="text/css">
 	#<?php echo $id; ?> {
-    padding: 2rem;
+    padding: 1rem 1rem 0.75rem 1rem;
+    margin-bottom: 1rem;
     text-align: center;
-    background-color: #fff;
+    background-color: #EFEFEF;
 	}
 
   #<?php echo $id; ?> h1 {
     font-family: 'camptonbold', sans-serif;
     font-size: 2.25rem;
-    color: #404D7A;
+    color: #001A70;
     margin: 0;
   }
 
   #<?php echo $id; ?> h2 {
     font-family: 'camptonbook', sans-serif;
     font-size: 1rem;
-    color: #404D7A;
+    color: #001A70;
     margin: 20px 0 0 0;
     position: relative;
   }

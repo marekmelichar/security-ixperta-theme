@@ -544,6 +544,7 @@ h1:after {
   margin: 0.75rem 0 1.25rem 0;
   position: relative;
   text-transform: uppercase;
+  color: #001A70;
 }
 
 .h2:after,
@@ -2728,7 +2729,7 @@ a.arrow-green-circle {
   border: 1px solid #fff;
 }
 
-a.tile:hover {
+.tile:hover {
   color: #fff;
   text-decoration: none;
 }

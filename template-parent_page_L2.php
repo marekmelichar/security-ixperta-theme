@@ -13,7 +13,7 @@
 			<!-- <h1><?php the_title() ?></h1> -->
 			<?php the_content() ?>
 
-			<?php //get_template_part('partials/page_children_tiles'); ?>
+			<?php get_template_part('partials/page_children_tiles'); ?>
 
 			<?php get_template_part('partials/why_connect_with_us'); ?>
 

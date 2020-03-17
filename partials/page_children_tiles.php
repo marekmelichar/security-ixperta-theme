@@ -22,7 +22,8 @@
             <?php $href = get_permalink(); ?>
             <?php $background_image = get_field('background_image') ?>
 
-              <a class="col-md tile" href="<?php echo $href ?>">
+            <div class="col-md tile">
+              <a class="tile-header" href="<?php echo $href ?>">
 
                 <div class="bg bg-img" style="background-image: url(<?php echo $background_image['url']; ?>);"></div>
 
@@ -30,14 +31,17 @@
                   <?php get_template_part('svg/' . get_field('svg_icon') . '.svg'); ?>
                 </div>
 
-                <div class="heading"><?php echo the_field('heading') ?></div>
-                <div class="description"><?php echo the_field('description') ?></div>
-                <div class="arrow-green-circle">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-
               </a>
 
+              <div class="tile-body">
+                <div class="heading"><?php echo the_field('heading') ?></div>
+                <div class="description"><?php echo the_field('description') ?></div>
+              </div>
+
+              <a class="tile-footer arrow-green-circle" href="<?php echo $href ?>">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
 
           <?php endwhile; ?>
 
