@@ -8,6 +8,10 @@
 			equalheight('#why_connect_with_us .bg_color_stripe_repeater .heading .head');
 			// equalheight('.get_older_posts h3');
 			// equalheight('.get_older_posts .excerpt');
+			// equalheight('.child-page__tile .heading');
+			// equalheight('.child-page__tile .description');
+			// equalheight('.child-page__tile .arrow-green-circle');
+			// equalheight('.child-page__tile .tile-footer');
 		})
 
 
@@ -237,11 +241,11 @@
 		// })
 
 		// ============================================================================ NAVI
-		if (window.innerWidth < 768) {
-			// $('#navbarTogglerMainNavigation').addClass('collapse')
-		} else {
-			// $('#navbarTogglerMainNavigation').removeClass('collapse')
-		}
+		// if (window.innerWidth < 768) {
+		// 	// $('#navbarTogglerMainNavigation').addClass('collapse')
+		// } else {
+		// 	// $('#navbarTogglerMainNavigation').removeClass('collapse')
+		// }
 
 
 
@@ -555,6 +559,22 @@
 		// 	})
 
 		// }
+
+
+
+
+
+
+
+
+
+
+		// even width/height of child page tiles
+		const tileImg = $('.child-page__tile .tile-img')
+		const tileImgAfter = $('.child-page__tile .tile-img-overlay')
+		const width = tileImg.width()
+		tileImg.height(width)
+		tileImgAfter.height(width)
 
 
 

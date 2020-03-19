@@ -2734,6 +2734,12 @@ a.arrow-green-circle {
   text-decoration: none;
 }
 
+.tile .heading {
+  font-family: 'camptonsemibold', sans-serif;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
 .tile a {
   color: #fff;
   text-decoration: none;
@@ -2790,6 +2796,31 @@ a.arrow-green-circle {
   z-index: 2;
 }
 
+.tile .description {
+  font-family: 'camptonbook', sans-serif;
+  font-size: 0.875rem;
+  bottom: 1.25rem;
+  position: absolute;
+  line-height: 1.25;
+  z-index: 2;
+}
+
+.tile .arrow-green-circle {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+}
+
+.tile .svg {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+}
+
+.tile .link {
+  color: #fff;
+}
+
 .tile-1 .heading,
 .tile-4 .heading {
   font-family: 'camptonbook', sans-serif;
@@ -2828,30 +2859,84 @@ a.arrow-green-circle {
   z-index: 2;
 }
 
-.tile .description {
-  font-family: 'camptonbook', sans-serif;
-  font-size: 0.875rem;
-  bottom: 1.25rem;
-  position: absolute;
-  line-height: 1.25;
+
+
+
+
+
+/* new theme child page tiles */
+
+.child-page__tile {
+  padding: 1rem 0;
+  min-height: 300px;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 4px solid #fff;
+  color: #001A70;
+  text-align: center;
+}
+
+.child-page__tile .tile-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
 }
 
-.tile .arrow-green-circle {
+.child-page__tile .tile-img-overlay {
+  content: '';
+  display: block;
   position: absolute;
-  bottom: 1rem;
-  right: 1.5rem;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
-.tile .svg {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 0.5rem;
+.child-page__tile .tile-svg {
+  width: 90px;
+  height: 90px;
+  z-index: 2;
 }
 
-.tile .link {
-  color: #fff;
+.child-page__tile .tile-body {
+  margin-bottom: 2rem;
 }
+
+.child-page__tile .heading {
+  font-family: 'camptonsemibold', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+.child-page__tile .description {
+  font-family: 'camptonbook', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-top: 0.5rem;
+}
+
+.child-page__tile .arrow-green-circle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 
 
 
@@ -2966,13 +3051,13 @@ a.arrow-green-circle {
   padding: 1.5rem 0;
 }
 
-#page_children_tiles .tile .heading {
+/* #page_children_tiles .tile .heading {
   font-family: 'camptonsemibold', sans-serif;
   font-size: 2rem;
   line-height: 1.25;
-}
+} */
 
-.gradient-bg:after {
+/* .gradient-bg:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2982,7 +3067,7 @@ a.arrow-green-circle {
 
   background-image: linear-gradient(rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.5) 100%);
   z-index: 1;
-}
+} */
 
 
 
