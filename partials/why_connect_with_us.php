@@ -26,7 +26,7 @@
 
         ?>
 
-        <div class="col">
+        <!-- <div class="col">
           <div class="row no-gutters">
             <div class="col-md-3">
               <?php if($icon): ?>
@@ -47,16 +47,10 @@
                 <?php echo $content; ?>
               </div>
               <?php if(!$href_text && $href): ?>
-                <!-- <a href="<?php echo $href; ?>">
-                  <div class="arrow-green-circle __the-little-plus">
-                    <?php //get_template_part('svg/button_plus_green.svg'); ?>
-                  </div>
-                </a> -->
                 <a class="arrow-green-circle" href="<?php echo $href; ?>">
                   <i class="fas fa-chevron-right"></i>
                 </a>
               <?php elseif(!$href_text && !$href): ?>
-                <!-- nothing -->
               <?php else: ?>
                 <a href="<?php echo $href; ?>" class="__btn-more-info">
                   <?php echo $href_text; ?>
@@ -64,7 +58,27 @@
               <?php endif; ?>
             </div>
           </div>
+        </div> -->
+
+        <div class="col">
+          <div class="row">
+            <div class="col">
+            <?php if($heading): ?>
+                <div class="heading">
+                  <?php if($href): ?><a href="<?php echo $href; ?>"><?php endif; ?>
+                    <h3 class="head"><?php echo $heading; ?></h3>
+                  <?php if($href): ?></a><?php endif; ?>
+                </div>
+              <?php endif; ?>
+              <?php if($content): ?>
+                <div class="content">
+                  <?php echo $content; ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          </div>
         </div>
+
 
 
 

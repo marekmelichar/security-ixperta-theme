@@ -1299,6 +1299,7 @@ footer h2:after {
 
 footer a {
   color: #001A70;
+  text-decoration: underline;
 }
 
 .socials {
@@ -1556,6 +1557,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #about_us h2 {
   text-align: center;
+  color: #fff;
 }
 
 #about_us h2:after {
@@ -1566,6 +1568,7 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #about_us h3 {
   text-align: center;
+  color: #fff;
 }
 
 #about_us .member {
@@ -2187,7 +2190,6 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 
 #why_connect_with_us.light .bg_color_stripe_repeater {
   color: #001A70;
-  padding: 1.5rem 0 0 0;
 }
 
 #services .bg_color_stripe_repeater .svg,
@@ -2224,7 +2226,9 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 }
 
 #why_connect_with_us .bg_color_stripe_repeater .content {
-  font-size: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 #services .bg_color_stripe_repeater .content p,
@@ -2714,7 +2718,9 @@ a.arrow-green-circle {
 
 
 
-
+#page_children_tiles {
+  padding: 0 0 1.5rem 0;
+}
 
 .tile {
   padding: 1rem;
@@ -2867,7 +2873,7 @@ a.arrow-green-circle {
 /* new theme child page tiles */
 
 .child-page__tile {
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
   min-height: 300px;
   color: #fff;
   position: relative;
@@ -2897,7 +2903,8 @@ a.arrow-green-circle {
   content: '';
   display: block;
   position: absolute;
-  top: 1rem;
+  /* top: 1rem; */
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2917,7 +2924,7 @@ a.arrow-green-circle {
 
 .child-page__tile .heading {
   font-family: 'camptonsemibold', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.25;
   margin-top: 1rem;
 }
@@ -3030,46 +3037,6 @@ a.arrow-green-circle {
   color: #00B388;
   font-family: 'camptonbold', sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#page_children_tiles {
-  padding: 1.5rem 0;
-}
-
-/* #page_children_tiles .tile .heading {
-  font-family: 'camptonsemibold', sans-serif;
-  font-size: 2rem;
-  line-height: 1.25;
-} */
-
-/* .gradient-bg:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  background-image: linear-gradient(rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.5) 100%);
-  z-index: 1;
-} */
-
-
 
 
 
