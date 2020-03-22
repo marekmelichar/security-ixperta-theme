@@ -12,6 +12,7 @@
 			// equalheight('.child-page__tile .description');
 			// equalheight('.child-page__tile .arrow-green-circle');
 			// equalheight('.child-page__tile .tile-footer');
+			equalheight('.reference-tiles__tile h2');
 		})
 
 

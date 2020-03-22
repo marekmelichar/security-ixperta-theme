@@ -1222,6 +1222,7 @@ html[lang="de-DE"] .primary-menu ul li:after {
 #banner h2 {
   font-family: 'camptonbook', sans-serif;
   position: relative;
+  color: #fff;
 }
 
 #banner h2:after {
@@ -3067,35 +3068,21 @@ a.arrow-green-circle {
 
 .reference-tiles__tile {
   position: relative;
+  text-align: center;
 }
 
-.reference-tiles .col {
-  background-color: #EFEFEF;
-  padding: 1rem;
-  min-height: 300px;
-}
-
-/* .reference-tiles .col:nth-child(2n) {
-  background: #DFDFDF;
-} */
-
-.reference-tiles .col:nth-child(2),
-.reference-tiles .col:nth-child(4),
-.reference-tiles .col:nth-child(5),
-.reference-tiles .col:nth-child(7),
-.reference-tiles .col:nth-child(10),
-.reference-tiles .col:nth-child(12),
-.reference-tiles .col:nth-child(13),
-.reference-tiles .col:nth-child(15),
-.reference-tiles .col:nth-child(18),
-.reference-tiles .col:nth-child(20) {
-  background: #DFDFDF;
+.reference-tiles__tile .svg {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .reference-tiles__tile h2 {
   color: #001A70;
   font-family: 'camptonsemibold', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: none;
 }
 
 .reference-tiles__tile h2:after {
@@ -3131,9 +3118,7 @@ a.reference-tiles__tile:before {
 }
 
 .reference-tiles .arrow-green-circle {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  margin: 0 auto;
 }
 
 .reference-tiles .arrow-green-circle .fa-chevron-right {

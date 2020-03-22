@@ -18,14 +18,17 @@ get_header();
   <div class="row reference-tiles">
     <?php
 
-    $args = array( 'post_type' => 'reference', 'posts_per_page' => 48 );
+    $args = array(
+      'post_type' => 'reference',
+      'posts_per_page' => -1,
+      'meta_key'			=> 'orderby',
+      'orderby'			=> 'meta_value',
+      'order'				=> 'ASC'
+    );
     $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
       <?php get_template_part('partials/reference_tile_in_archive'); ?>
-
-      
-
 
     <?php endwhile; ?>
   </div>
