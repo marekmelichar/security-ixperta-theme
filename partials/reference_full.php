@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col">
         <div class="reference-banner">
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <?php the_content(); ?>
 

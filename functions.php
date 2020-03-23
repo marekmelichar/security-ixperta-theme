@@ -578,9 +578,6 @@ function personal_reference_block_render_callback( $block ) {
 
 
 
-
-
-
 // Create Custom Post Type = "Reference"
 
 
@@ -689,3 +686,4 @@ function show_tags($post_object) {
 
 
 require_once THEME_DIRECTORY . '/template-blocks/register-block/custom-heading.php';
+require_once THEME_DIRECTORY . '/template-blocks/register-block/reference-banner.php';
