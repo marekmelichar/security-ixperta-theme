@@ -49,7 +49,7 @@ $id = 'stripewithsolutions-' . $block['id'];
 <style type="text/css">
 
 	#<?php echo $id; ?> {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     background-color: #EFEFEF;
 	}
 

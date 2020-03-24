@@ -1,6 +1,8 @@
 (function ($) {
 	$(document).ready(function () { // wait for DOM
 
+
+
 		$(window).on('load', function () {
 			// equalheight('#posts_query_stripe .blocks .excerpt');
 			// equalheight('#products .svg');
@@ -14,6 +16,34 @@
 			// equalheight('.child-page__tile .tile-footer');
 			equalheight('.reference-tiles__tile h2');
 		})
+
+
+
+
+
+
+		
+
+		// put icon in front of breadcrumbs
+		$('#breadcrumbs').prepend(`
+			<svg id="home_icon" xmlns="http://www.w3.org/2000/svg" width="20.193" height="18" viewBox="0 0 20.193 18">
+				<defs>
+					<style>
+						#home_icon .a{fill:#707070;}
+					</style>
+				</defs>
+				<g transform="translate(0.001 -27.797)">
+					<g transform="translate(-0.001 27.798)">
+						<g transform="translate(0 0)">
+							<path class="a" d="M19.977,34.907,10.406,27.9a.525.525,0,0,0-.62,0L.214,34.907a.525.525,0,0,0,.62.847L10.1,28.972l9.262,6.781a.525.525,0,0,0,.62-.847Z" transform="translate(0.001 -27.798)"/>
+						</g>
+					</g>
+					<g transform="translate(2.226 35.872)">
+						<path class="a" d="M71.667,232.543a.525.525,0,0,0-.525.525v8.351h-4.2V236.86a2.623,2.623,0,0,0-5.247,0v4.559H57.5v-8.351a.525.525,0,0,0-1.049,0v8.876a.525.525,0,0,0,.525.525h5.246a.524.524,0,0,0,.523-.484.4.4,0,0,0,0-.041V236.86a1.574,1.574,0,0,1,3.148,0v5.083a.386.386,0,0,0,0,.04.524.524,0,0,0,.523.484h5.246a.525.525,0,0,0,.525-.525v-8.876A.525.525,0,0,0,71.667,232.543Z" transform="translate(-56.452 -232.543)"/>
+					</g>
+				</g>
+			</svg>
+		`)
 
 
 

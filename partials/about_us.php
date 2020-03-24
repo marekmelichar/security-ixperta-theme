@@ -36,10 +36,10 @@
 
               <div class="col-md-<?php echo 12 / $count ?> member <?php if($count == 1) { ?>only_one_col<?php } ?>">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-md-4">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <h2>
                       <?php echo $name; ?>
                       <div class="phone">

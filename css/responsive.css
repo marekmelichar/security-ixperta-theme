@@ -422,6 +422,10 @@
 
 @media (max-width: 767px) {
 
+  #about_us .member .social-list {
+    top: 0;
+  }
+
   .icon-scroll {
     display: none;
   }

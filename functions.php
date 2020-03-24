@@ -687,3 +687,5 @@ function show_tags($post_object) {
 
 require_once THEME_DIRECTORY . '/template-blocks/register-block/custom-heading.php';
 require_once THEME_DIRECTORY . '/template-blocks/register-block/reference-banner.php';
+require_once THEME_DIRECTORY . '/template-blocks/register-block/custom-section.php';
+require_once THEME_DIRECTORY . '/template-blocks/register-block/personal-testimonial.php';

@@ -17,33 +17,35 @@ $id = 'referencebanner-' . $block['id'];
 
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h1><?php echo get_field('ref_banner_heading'); ?></h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-
+      <div class="col-md image_or_svg">
         <?php if (strpos($ref_banner_image['url'], '.svg') == true) { ?>
-          <div class="svg">
-            <?php echo file_get_contents($ref_banner_image['url']); ?>
-          </div>
+          <?php echo file_get_contents($ref_banner_image['url']); ?>
         <?php } else { ?>
-          <div class="image">
-            <img src="<?php echo $ref_banner_image['url'] ?>" alt="<?php echo $ref_banner_image['alt'] ?>">
-          </div>
+          <img src="<?php echo $ref_banner_image['url'] ?>" alt="<?php echo $ref_banner_image['alt'] ?>">
         <?php } ?>
-
       </div>
-      <div class="col-md-9">
-        <div class="content">
+      <div class="col-md content">
+        <h1><?php echo get_field('ref_banner_heading'); ?></h1>
+        <div class="desc">
           <?php echo get_field('ref_banner_content'); ?>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="breadcrumbs"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <?php
+          if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb('
+            <p id="breadcrumbs">','</p>');
+          }
+        ?>
+        <div class="bottom-line"></div>
+      </div>
+    </div>
+  </div>
 
 </section>
 
@@ -52,53 +54,79 @@ $id = 'referencebanner-' . $block['id'];
 <style type="text/css">
 
 	#<?php echo $id; ?> {
-    margin: 2rem 0;
+    margin: 0;
 	}
 
-  #<?php echo $id; ?> .svg {
-    /* width: 33%; */
+  #<?php echo $id; ?> .image_or_svg {
+    padding: 6rem 2rem;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #<?php echo $id; ?> svg {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
-  #<?php echo $id; ?> .tags {
+  #<?php echo $id; ?> .content {
+    padding: 2rem;
+    background-color: #00B388;
+    color: #fff;
     text-align: left;
-    margin-top: 1.5rem;
   }
 
-  #<?php echo $id; ?> .tags a {
-    background-color: #DFDFDF;
-    border-radius: 25px;
-    padding: 0.5rem 2rem 0.5rem 3rem;
-    margin: 0 0.5rem;
-    position: relative;
-    color: #001A70;
+  #<?php echo $id; ?> h1 {
+    font-size: 2.25rem;
+    text-align: left;
   }
 
-  #<?php echo $id; ?> .tags a:before {
-    content: '#';
+  #<?php echo $id; ?> .desc {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  #<?php echo $id; ?> h1:after {
+    background-color: #fff;
+    left: 0;
+    transform: none;
+  }
+
+  #<?php echo $id; ?> #breadcrumbs {
+    margin: 1rem 0 1rem -1rem;
+    color: #707070;
+	}
+
+	#<?php echo $id; ?> #breadcrumbs svg {
+    width: 1.5rem;
+    margin-right: 0.25rem;
+	}
+
+	#<?php echo $id; ?> #breadcrumbs a {
+    color: #707070;
+	}
+
+  #<?php echo $id; ?> .bottom-line {
+    width: 100%;
+    background-color: #707070;
+    height: 1px;
     position: absolute;
-    left: 2rem;
+    left: 0;
+    right: 0;
   }
+
+
 
   @media (max-width: 767px) {
-
-    #<?php echo $id; ?> .tags a {
-      display: inline-block;
-      padding: 0.5rem 1rem 0.5rem 1.5rem;
-      margin: 0.25rem 0.5rem;
-    }
-
-    #<?php echo $id; ?> .tags a:before {
-      left: 0.75rem;
-    }
 
     #<?php echo $id; ?> .svg {
       width: 60%;
       margin: 1rem auto;
+    }
+
+    #<?php echo $id; ?> #breadcrumbs {
+      margin: 1rem 0;
     }
   }
 
