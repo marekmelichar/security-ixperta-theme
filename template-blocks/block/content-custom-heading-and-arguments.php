@@ -97,12 +97,11 @@ $id = 'customheadingandarguments-' . $block['id'];
 
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function(event) { 
-    
     (function ($) {
-
-      var id = <?php echo json_encode($id); ?>;
-      equalheight($(`#${id} .content`));
-
+      $(window).on('load', function () {
+        var id = <?php echo json_encode($id); ?>;
+        equalheight($(`#${id} .content`));
+      })
     })(jQuery, window);
   })
 </script>
