@@ -422,6 +422,10 @@
 
 @media (max-width: 767px) {
 
+  #about_us .about_us_tile {
+    margin-bottom: 1rem;
+  }
+
   #about_us .member .social-list {
     top: 0;
   }

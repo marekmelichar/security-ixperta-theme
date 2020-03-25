@@ -1,5 +1,33 @@
-<section id="about_us">
+<section id="about_us" class="<?php echo get_field('show_tiles') ? "show_tiles" : "" ?>">
   <div class="container">
+
+    <?php if(get_field('show_tiles')) { ?>
+      <div class="row about_us_tiles">
+
+        <?php if( have_rows('tiles_repeater') ): ?>
+          <?php while( have_rows('tiles_repeater') ): the_row();
+            // vars
+            $content = get_sub_field('content');
+            $button_text = get_sub_field('button_text');
+            $href = get_sub_field('href');
+            ?>
+
+            <div class="col-md about_us_tile">
+              <div class="content">
+                <?php echo $content; ?>
+              </div>
+              <div class="footer">
+                <a href="<?php echo $href; ?>">
+                  <?php echo $button_text; ?>
+                </a>
+              </div>
+            </div>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+    <?php } ?>
+
     <div class="row">
       <div class="col">
         <?php if(get_field('about_us_heading')) { ?>

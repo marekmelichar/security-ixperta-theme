@@ -4,19 +4,32 @@
 
 
 		$(window).on('load', function () {
-			// equalheight('#posts_query_stripe .blocks .excerpt');
-			// equalheight('#products .svg');
 			equalheight('.little_call_to_actions_cols .blue-text');
 			equalheight('#why_connect_with_us .bg_color_stripe_repeater .heading .head');
-			// equalheight('.get_older_posts h3');
-			// equalheight('.get_older_posts .excerpt');
-			// equalheight('.child-page__tile .heading');
-			// equalheight('.child-page__tile .description');
-			// equalheight('.child-page__tile .arrow-green-circle');
-			// equalheight('.child-page__tile .tile-footer');
 			equalheight('.reference-tiles__tile h2');
+			equalheight('#about_us .about_us_tile .content');
 		})
 
+
+
+
+
+
+
+		// kontakty = about_us section when tiles are enabled by checkbox in admin
+		const about_us = $('#about_us.show_tiles')
+		const about_us_tiles = $('#about_us .about_us_tiles')
+		const about_us_tiles_height = about_us_tiles.outerHeight()
+
+		about_us.css({
+			marginTop: 36 + about_us_tiles_height / 2,
+			paddingTop: 0
+		})
+
+		about_us_tiles.css({
+			marginTop: - (about_us_tiles_height / 2),
+			marginBottom: 1.5 + 'rem'
+		})
 
 
 
