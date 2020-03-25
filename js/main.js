@@ -5,7 +5,7 @@
 
 		$(window).on('load', function () {
 			equalheight('.little_call_to_actions_cols .blue-text');
-			equalheight('#why_connect_with_us .bg_color_stripe_repeater .heading .head');
+			// equalheight('#why_connect_with_us .bg_color_stripe_repeater .heading .head');
 			equalheight('.reference-tiles__tile h2');
 			equalheight('#about_us .about_us_tile .content');
 		})
