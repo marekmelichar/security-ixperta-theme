@@ -10,11 +10,11 @@
 
 		<article <?php post_class() ?>>
 
-			<h1><?php the_title() ?></h1>
-
-			<div class="container">
+			<!-- <div class="container">
 				<?php the_content() ?>
-			</div>
+			</div> -->
+
+			<?php the_content() ?>
 
 			<?php get_template_part('partials/about_us'); ?>
 

@@ -689,3 +689,4 @@ require_once THEME_DIRECTORY . '/template-blocks/register-block/custom-heading.p
 require_once THEME_DIRECTORY . '/template-blocks/register-block/reference-banner.php';
 require_once THEME_DIRECTORY . '/template-blocks/register-block/custom-section.php';
 require_once THEME_DIRECTORY . '/template-blocks/register-block/personal-testimonial.php';
+require_once THEME_DIRECTORY . '/template-blocks/register-block/page-L3-banner.php';
