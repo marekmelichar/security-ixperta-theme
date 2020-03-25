@@ -1,8 +1,8 @@
-<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<svg id="iconlinkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
   <defs>
     <style>
-      #linkedin .a{fill:#0077b5;}
-      #linkedin .b{fill:#fefefe;}
+      #iconlinkedin .a{fill:#0077b5;}
+      #iconlinkedin .b{fill:#fefefe;}
     </style>
   </defs>
   <path class="a" d="M22.224,0H1.772A1.752,1.752,0,0,0,0,1.729V22.271A1.752,1.752,0,0,0,1.772,24H22.224A1.756,1.756,0,0,0,24,22.271V1.729A1.756,1.756,0,0,0,22.224,0Z"/>

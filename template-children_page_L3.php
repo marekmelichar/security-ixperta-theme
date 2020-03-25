@@ -10,10 +10,6 @@
 
 		<article <?php post_class() ?>>
 
-			<!-- <div class="container">
-				<?php the_content() ?>
-			</div> -->
-
 			<?php the_content() ?>
 
 			<?php get_template_part('partials/about_us'); ?>
