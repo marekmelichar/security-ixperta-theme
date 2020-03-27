@@ -1,9 +1,9 @@
-<section id="why_connect_with_us" class="<?php the_field('wcwu_bg_color_class'); ?>" style="background: <?php the_field('wcwu_bg_color') ?>;">
+<article id="why_connect_with_us" class="<?php the_field('wcwu_bg_color_class'); ?>" style="background: <?php the_field('wcwu_bg_color') ?>;">
 
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2><?php echo the_field('wcwu_bg_color_heading'); ?></h2>
+        <h1><?php echo the_field('wcwu_bg_color_heading'); ?></h1>
       </div>
     </div>
   </div>
@@ -18,7 +18,6 @@
       <?php while( have_rows('wcwu_bg_color_stripe_repeater') ): the_row();
 
         // vars
-        $icon = get_sub_field('icon');
         $heading = get_sub_field('heading');
         $content = get_sub_field('content', false, false);
         $href = get_sub_field('href');
@@ -57,4 +56,4 @@
   <?php endif; ?>
 
 
-</section>
+</article>

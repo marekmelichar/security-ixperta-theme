@@ -1,8 +1,8 @@
-<section class="get_older_posts"><!-- GET OLDER POSTS -->
+<article class="get_older_posts"><!-- GET OLDER POSTS -->
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2><?php the_field('get_older_posts_heading'); ?></h2>
+        <h1><?php the_field('get_older_posts_heading'); ?></h1>
       </div>
     </div>
 
@@ -59,4 +59,4 @@
       <?php wp_reset_query(); ?>
       <?php wp_reset_postdata(); ?>
   </div>
-</section><!-- / GET OLDER POSTS -->
+</article><!-- / GET OLDER POSTS -->

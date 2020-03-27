@@ -1,4 +1,4 @@
-<section id="about_us" class="<?php echo get_field('show_tiles') ? "show_tiles" : "" ?>">
+<article id="about_us" class="<?php echo get_field('show_tiles') ? "show_tiles" : "" ?>">
   <div class="container">
 
     <?php if(get_field('show_tiles')) { ?>
@@ -16,11 +16,13 @@
               <div class="content">
                 <?php echo $content; ?>
               </div>
-              <div class="footer">
-                <a href="<?php echo $href; ?>">
-                  <?php echo $button_text; ?>
-                </a>
-              </div>
+              <?php if($button_text && $href) { ?>
+                <div class="footer">
+                  <a href="<?php echo $href; ?>">
+                    <?php echo $button_text; ?>
+                  </a>
+                </div>
+              <?php } ?>
             </div>
 
           <?php endwhile; ?>
@@ -31,10 +33,10 @@
     <div class="row">
       <div class="col">
         <?php if(get_field('about_us_heading')) { ?>
-          <h2><?php echo the_field('about_us_heading'); ?></h2>
+          <h1><?php echo the_field('about_us_heading'); ?></h1>
         <?php } ?>
         <?php if(get_field('about_us_subheading')) { ?>
-          <h3><?php echo the_field('about_us_subheading'); ?></h3>
+          <h2><?php echo the_field('about_us_subheading'); ?></h2>
         <?php } ?>
       </div>
     </div>
@@ -118,4 +120,4 @@
       <?php endif; ?>
     </div>
   </div>
-</section>
+</article>

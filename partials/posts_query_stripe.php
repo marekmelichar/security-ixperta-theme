@@ -1,6 +1,6 @@
-<section id="posts_query_stripe">
+<article id="posts_query_stripe">
   <div class="container p-0">
-    <h2><?php echo the_field('posts_query_heading') ?></h2>
+    <h1><?php echo the_field('posts_query_heading') ?></h1>
 
     <div class="row blocks">
       <?php $post_objects = get_field('posts_query_posts');
@@ -41,4 +41,4 @@
       <?php endif; ?>
     </div>
   </div>
-</section>
+</article>

@@ -1,9 +1,9 @@
-<section id="products" class="<?php the_field('bg_color_class_2'); ?>" style="background: <?php the_field('bg_color_2') ?>;">
+<article id="products" class="<?php the_field('bg_color_class_2'); ?>" style="background: <?php the_field('bg_color_2') ?>;">
 
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2><?php echo the_field('bg_color_heading_2'); ?></h2>
+        <h1><?php echo the_field('bg_color_heading_2'); ?></h1>
       </div>
     </div>
   </div>
@@ -82,4 +82,4 @@
   <?php endif; ?>
 
 
-</section>
+</article>

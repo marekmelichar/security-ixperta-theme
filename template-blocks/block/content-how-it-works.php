@@ -34,7 +34,7 @@ $id = 'howitworks-' . $block['id'];
               $content = get_sub_field('content', false, false);
             ?>
 
-            <div class="col">
+            <div class="col-md">
               <div class="image_or_svg">
                 <?php if (strpos($image['url'], '.svg') == true) { ?>
                   <?php echo file_get_contents($image['url']); ?>

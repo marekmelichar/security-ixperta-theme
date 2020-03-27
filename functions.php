@@ -31,6 +31,7 @@ require_once THEME_DIRECTORY . '/inc/hide-the-editor.php';
  * Shortcodes
  */
 require_once THEME_DIRECTORY . '/inc/shortcode_get_post.php';
+require_once THEME_DIRECTORY . '/inc/shortcode_button.php';
 
 /**
  * Customizer
@@ -149,55 +150,55 @@ if( function_exists('acf_add_options_page') ) {
 
 // OPTIONALLY CAN USE ICONS IN SHORTCODE :
 
-function ikona_facebook() {
-  ob_start();
-  get_template_part('svg/ikona_facebook.svg');
-  return ob_get_clean();
-}
-add_shortcode('ikona_facebook', 'ikona_facebook');
+// function ikona_facebook() {
+//   ob_start();
+//   get_template_part('svg/ikona_facebook.svg');
+//   return ob_get_clean();
+// }
+// add_shortcode('ikona_facebook', 'ikona_facebook');
 
 
 
-function ikona_linkedin() {
-  ob_start();
-  get_template_part('svg/ikona_linkedin.svg');
-  return ob_get_clean();
-}
-add_shortcode('ikona_linkedin', 'ikona_linkedin');
+// function ikona_linkedin() {
+//   ob_start();
+//   get_template_part('svg/ikona_linkedin.svg');
+//   return ob_get_clean();
+// }
+// add_shortcode('ikona_linkedin', 'ikona_linkedin');
 
 
 
-function ikona_youtube() {
-  ob_start();
-  get_template_part('svg/ikona_youtube.svg');
-  return ob_get_clean();
-}
-add_shortcode('ikona_youtube', 'ikona_youtube');
+// function ikona_youtube() {
+//   ob_start();
+//   get_template_part('svg/ikona_youtube.svg');
+//   return ob_get_clean();
+// }
+// add_shortcode('ikona_youtube', 'ikona_youtube');
 
 
 
-function homepage_industrial_vision_logo() {
-  ob_start();
-  get_template_part('svg/homepage_industrial_vision_logo.svg');
-  return ob_get_clean();
-}
-add_shortcode('homepage_industrial_vision_logo', 'homepage_industrial_vision_logo');
+// function homepage_industrial_vision_logo() {
+//   ob_start();
+//   get_template_part('svg/homepage_industrial_vision_logo.svg');
+//   return ob_get_clean();
+// }
+// add_shortcode('homepage_industrial_vision_logo', 'homepage_industrial_vision_logo');
 
 
 
-function homepage_xevoq_logo() {
-  ob_start();
-  get_template_part('svg/homepage_xevoq_logo.svg');
-  return ob_get_clean();
-}
-add_shortcode('homepage_xevoq_logo', 'homepage_xevoq_logo');
+// function homepage_xevoq_logo() {
+//   ob_start();
+//   get_template_part('svg/homepage_xevoq_logo.svg');
+//   return ob_get_clean();
+// }
+// add_shortcode('homepage_xevoq_logo', 'homepage_xevoq_logo');
 
-function logo_ixperta_bile() {
-  ob_start();
-  get_template_part('svg/logo_ixperta_bile.svg');
-  return ob_get_clean();
-}
-add_shortcode('logo_ixperta_bile', 'logo_ixperta_bile');
+// function logo_ixperta_bile() {
+//   ob_start();
+//   get_template_part('svg/logo_ixperta_bile.svg');
+//   return ob_get_clean();
+// }
+// add_shortcode('logo_ixperta_bile', 'logo_ixperta_bile');
 
 
 
@@ -691,3 +692,4 @@ require_once THEME_DIRECTORY . '/template-blocks/register-block/custom-section.p
 require_once THEME_DIRECTORY . '/template-blocks/register-block/personal-testimonial.php';
 require_once THEME_DIRECTORY . '/template-blocks/register-block/page-L3-banner.php';
 require_once THEME_DIRECTORY . '/template-blocks/register-block/heading-and-arguments.php';
+require_once THEME_DIRECTORY . '/template-blocks/register-block/data-loss-prevention.php';

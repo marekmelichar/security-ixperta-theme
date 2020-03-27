@@ -538,7 +538,6 @@ h1:after {
 }
 
 .h2, h2 {
-  /* font-size: 1.5rem; */
   font-size: 1.25rem;
   font-family: 'camptonbold', sans-serif;
   margin: 0.75rem 0 1.25rem 0;
@@ -547,7 +546,7 @@ h1:after {
   color: #001A70;
 }
 
-.h2:after,
+/* .h2:after,
 h2:after {
   content: '';
   display: block;
@@ -557,13 +556,13 @@ h2:after {
   width: 100px;
   height: 4px;
   background-color: #00B388;
-}
+} */
 
-.text-center .h2:after,
+/* .text-center .h2:after,
 .text-center h2:after {
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .h3, h3 {
   font-size: 1rem;
@@ -1556,18 +1555,18 @@ html[lang="de-DE"] #helpWidget h2.rotate {
   color: #001A70;
 }
 
-#about_us h2 {
+#about_us h1 {
   text-align: center;
   color: #fff;
 }
 
-#about_us h2:after {
+#about_us h1:after {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
 }
 
-#about_us h3 {
+#about_us h2 {
   text-align: center;
   color: #fff;
 }
@@ -2382,8 +2381,12 @@ html[lang="de-DE"] #helpWidget h2.rotate {
   position: relative;
 }
 
-#references h2 {
+#references h1 {
   color: #fff;
+}
+
+#references h1:after {
+  background-color: #fff;
 }
 
 #references .references__logos .svg {

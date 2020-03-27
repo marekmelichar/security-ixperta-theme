@@ -1,8 +1,8 @@
-<section id="references">
+<article id="references">
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h2><?php echo the_field('references_heading'); ?></h2>
+        <h1><?php echo the_field('references_heading'); ?></h1>
       </div>
     </div>
 
@@ -41,4 +41,4 @@
     </div>
 
   </div>
-</section>
+</article>

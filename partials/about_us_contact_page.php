@@ -1,12 +1,12 @@
 <!-- we are reusing the "about_us" ID, but difference is, that on contact page we are displaying only 3 blocks in a row -->
-<section id="about_us">
+<article id="about_us">
   <div class="container">
     <div class="row">
       <div class="col">
         <?php if(get_field('about_us_heading')) { ?>
-          <h2><?php echo the_field('about_us_heading'); ?></h2>
+          <h1><?php echo the_field('about_us_heading'); ?></h1>
         <?php } ?>
-        <h3><?php echo the_field('about_us_subheading'); ?></h3>
+        <h2><?php echo the_field('about_us_subheading'); ?></h2>
       </div>
     </div>
 
@@ -86,4 +86,4 @@
       <?php endif; ?>
     </div>
   </div>
-</section>
+</article>

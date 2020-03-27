@@ -10,7 +10,7 @@ $id = 'customheadingandarguments-' . $block['id'];
 
 ?>
 
-<section id="<?php echo $id; ?>">
+<article id="<?php echo $id; ?>">
   <div class="container">
     <div class="row mb-3">
       <div class="col">
@@ -18,7 +18,7 @@ $id = 'customheadingandarguments-' . $block['id'];
       </div>
     </div>
     
-    <div class="row">
+    <div class="row justify-content-center">
       <?php if( have_rows('repeater') ): ?>
         <?php $i = 1 ?>
           <?php while( have_rows('repeater') ): the_row(); ?>
@@ -28,14 +28,14 @@ $id = 'customheadingandarguments-' . $block['id'];
             ?>
 
             <div class="col-md-3">
-              <div class="content">
+              <div class="content <?php echo get_sub_field('show_background_color') ? "" : "no-bg-color" ?>">
                 <?php echo $content; ?>
               </div>
             </div>
 
             <?php if ($i % 4 == 0) { ?>
               </div>
-              <div class="row">
+              <div class="row justify-content-center">
             <?php } ?>
           
           <?php $i++; ?>
@@ -43,7 +43,7 @@ $id = 'customheadingandarguments-' . $block['id'];
       <?php endif; ?>
     </div>
   </div>
-</section>
+</article>
 
 
 
@@ -55,29 +55,38 @@ $id = 'customheadingandarguments-' . $block['id'];
 
 	#<?php echo $id; ?> .content {
     padding: 1rem;
-    background: #EFEFEF;
+    background-color: #EFEFEF;
     text-align: center;
-	}
+  }
 
   #<?php echo $id; ?> .row {
     margin-bottom: 2rem;
   }
 
   #<?php echo $id; ?> .row:nth-child(even) [class*="col"]:nth-child(1n) .content {
-    background: #EFEFEF;
+    background-color: #EFEFEF;
   }
 
   #<?php echo $id; ?> .row:nth-child(even) [class*="col"]:nth-child(2n) .content {
-    background: #DFDFDF;
+    background-color: #DFDFDF;
   }
 
   #<?php echo $id; ?> .row:nth-child(odd) [class*="col"]:nth-child(1n) .content {
-    background: #DFDFDF;
+    background-color: #DFDFDF;
   }
 
   #<?php echo $id; ?> .row:nth-child(odd) [class*="col"]:nth-child(2n) .content {
-    background: #EFEFEF;
+    background-color: #EFEFEF;
   }
+
+  #<?php echo $id; ?> .row:nth-child(even) [class*="col"]:nth-child(1n) .content.no-bg-color,
+  #<?php echo $id; ?> .row:nth-child(even) [class*="col"]:nth-child(2n) .content.no-bg-color,
+  #<?php echo $id; ?> .row:nth-child(odd) [class*="col"]:nth-child(1n) .content.no-bg-color,
+  #<?php echo $id; ?> .row:nth-child(odd) [class*="col"]:nth-child(2n) .content.no-bg-color {
+    background-color: transparent;
+  }
+
+  
 
 
 
