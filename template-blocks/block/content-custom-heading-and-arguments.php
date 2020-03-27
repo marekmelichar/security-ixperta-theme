@@ -12,12 +12,14 @@ $id = 'customheadingandarguments-' . $block['id'];
 
 <article id="<?php echo $id; ?>">
   <div class="container">
-    <div class="row mb-3">
-      <div class="col">
-        <h1><?php the_field('heading') ?></h1>
-      </div>
-    </div>
-    
+    <?php if(get_field('heading')) { ?>
+      <h1 class="mb-2"><?php the_field('heading') ?></h1>
+    <?php } ?>
+
+    <?php if(get_field('subheading')) { ?>
+      <h2 style="color: <?php the_field('subheading_color') ?>;"><?php the_field('subheading') ?></h2>
+    <?php } ?>
+
     <div class="row justify-content-center">
       <?php if( have_rows('repeater') ): ?>
         <?php $i = 1 ?>
@@ -25,10 +27,13 @@ $id = 'customheadingandarguments-' . $block['id'];
 
             <?php
               $content = get_sub_field('content', false, false);
+              $background_color = get_sub_field('background_color');
+              $text_color = get_sub_field('text_color');
             ?>
 
-            <div class="col-md-3">
-              <div class="content <?php echo get_sub_field('show_background_color') ? "" : "no-bg-color" ?>">
+            <!-- if there is only one column, make it full width -->
+            <div class="col-md<?php echo count(get_field('repeater')) == 1 ? "" : "-3" ?>">
+              <div class="content <?php echo get_sub_field('show_background_color') ? "" : "no-bg-color" ?>" style="background-color: <?php echo $background_color; ?>; color: <?php echo $text_color; ?>;">
                 <?php echo $content; ?>
               </div>
             </div>
@@ -51,6 +56,15 @@ $id = 'customheadingandarguments-' . $block['id'];
 <style type="text/css">
   #<?php echo $id; ?> {
     padding: 2rem 0 0 0;
+  }
+
+  #<?php echo $id; ?> h1 {
+    text-transform: none;
+  }
+
+  #<?php echo $id; ?> h2 {
+    text-align: center;
+    text-transform: none;
   }
 
 	#<?php echo $id; ?> .content {

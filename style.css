@@ -1578,9 +1578,17 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 #about_us .member h2 {
   text-align: left;
   text-transform: none;
+  margin-bottom: 3rem;
 }
 
 #about_us .member h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -28px;
+  width: 100px;
+  height: 4px;
+  background-color: #001A70;
   left: 0;
   transform: none;
 }

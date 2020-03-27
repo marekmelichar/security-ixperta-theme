@@ -150,30 +150,30 @@ if( function_exists('acf_add_options_page') ) {
 
 // OPTIONALLY CAN USE ICONS IN SHORTCODE :
 
-// function ikona_facebook() {
-//   ob_start();
-//   get_template_part('svg/ikona_facebook.svg');
-//   return ob_get_clean();
-// }
-// add_shortcode('ikona_facebook', 'ikona_facebook');
+function ikona_facebook() {
+  ob_start();
+  get_template_part('svg/ikona_facebook.svg');
+  return ob_get_clean();
+}
+add_shortcode('ikona_facebook', 'ikona_facebook');
 
 
 
-// function ikona_linkedin() {
-//   ob_start();
-//   get_template_part('svg/ikona_linkedin.svg');
-//   return ob_get_clean();
-// }
-// add_shortcode('ikona_linkedin', 'ikona_linkedin');
+function ikona_linkedin() {
+  ob_start();
+  get_template_part('svg/ikona_linkedin.svg');
+  return ob_get_clean();
+}
+add_shortcode('ikona_linkedin', 'ikona_linkedin');
 
 
 
-// function ikona_youtube() {
-//   ob_start();
-//   get_template_part('svg/ikona_youtube.svg');
-//   return ob_get_clean();
-// }
-// add_shortcode('ikona_youtube', 'ikona_youtube');
+function ikona_youtube() {
+  ob_start();
+  get_template_part('svg/ikona_youtube.svg');
+  return ob_get_clean();
+}
+add_shortcode('ikona_youtube', 'ikona_youtube');
 
 
 

@@ -95,6 +95,7 @@ $id = 'pageL3banner-' . $block['id'];
   #<?php echo $id; ?> h1 {
     font-size: 2.25rem;
     text-align: left;
+    text-transform: none;
   }
 
   #<?php echo $id; ?> .desc {

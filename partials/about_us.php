@@ -2,7 +2,7 @@
   <div class="container">
 
     <?php if(get_field('show_tiles')) { ?>
-      <div class="row about_us_tiles">
+      <div class="row about_us_tiles justify-content-center">
 
         <?php if( have_rows('tiles_repeater') ): ?>
           <?php while( have_rows('tiles_repeater') ): the_row();
@@ -12,7 +12,8 @@
             $href = get_sub_field('href');
             ?>
 
-            <div class="col-md about_us_tile">
+            <!-- if there is only one column, make it full width -->
+            <div class="col-md<?php echo count(get_field('tiles_repeater')) == 1 ? "-6" : "" ?> about_us_tile">
               <div class="content">
                 <?php echo $content; ?>
               </div>
