@@ -63,6 +63,8 @@ $id = 'customheadingandarguments-' . $block['id'];
   }
 
   #<?php echo $id; ?> h2 {
+    font-family: 'camptonbook', sans-serif;
+    margin-top: 2rem;
     text-align: center;
     text-transform: none;
   }
@@ -73,8 +75,16 @@ $id = 'customheadingandarguments-' . $block['id'];
     text-align: center;
   }
 
+  #<?php echo $id; ?> img {
+    /* width: 200px; */
+  }
+
+  #<?php echo $id; ?> .row:first-of-type {
+    margin-top: 2rem;
+  }
+
   #<?php echo $id; ?> .row {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   #<?php echo $id; ?> .row:nth-child(even) [class*="col"]:nth-child(1n) .content {
@@ -124,6 +134,7 @@ $id = 'customheadingandarguments-' . $block['id'];
       $(window).on('load', function () {
         var id = <?php echo json_encode($id); ?>;
         equalheight($(`#${id} .content`));
+        equalheight($(`#${id} img`));
       })
     })(jQuery, window);
   })
