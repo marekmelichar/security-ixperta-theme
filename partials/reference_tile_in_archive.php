@@ -1,7 +1,14 @@
 <div class="col col-md-3 reference-tiles__tile">
-    <div class="svg">
-      <?php get_template_part('svg/' . get_field('tile_svg_in_tile') . '.svg'); ?>
-    </div>
+    <?php $image = get_field('tile_svg_in_tile') ?>
+    <?php if($image): ?>
+      <div class="svg img">
+        <?php if (strpos($image['url'], '.svg') == true) { ?>
+          <?php echo file_get_contents($image['url']); ?>
+        <?php } else { ?>
+          <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+        <?php } ?>
+      </div>
+    <?php endif; ?>
     <div class="heading">
       <h2><?php the_title(); ?></h2>
     </div>

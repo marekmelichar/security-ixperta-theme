@@ -666,8 +666,7 @@
   }
 
   #services .bg_color_stripe_repeater .svg {
-    width: 40px;
-    margin: 0 auto;
+    margin: 1rem auto 0.5rem auto;
   }
 
   #why_connect_with_us .bg_color_stripe_repeater .svg {
@@ -696,7 +695,7 @@
     border-radius: 25px;
     padding: 0.5rem 1rem;
     color: #001A70;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .get_older_posts h3 {

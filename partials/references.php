@@ -20,9 +20,15 @@
           <?php //$content = get_sub_field('content'); ?>
 
           <div class="col">
-            <div class="svg">
-              <?php get_template_part('svg/' . $image . '.svg'); ?>
-            </div>
+            <?php if($image): ?>
+              <div class="svg img">
+                <?php if (strpos($image['url'], '.svg') == true) { ?>
+                  <?php echo file_get_contents($image['url']); ?>
+                <?php } else { ?>
+                  <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+                <?php } ?>
+              </div>
+            <?php endif; ?>
             <!-- <div class="heading">
               <h3 class="head"><?php //echo $heading; ?></h3>
             </div> -->

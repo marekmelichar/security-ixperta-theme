@@ -62,6 +62,7 @@ $id = 'pageL3banner-' . $block['id'];
 
   #<?php echo $id; ?> .image_or_svg {
     background-size: cover;
+    background-position: center;
   }
 
   #<?php echo $id; ?> svg {

@@ -15,9 +15,9 @@ $id = 'customheadingandarguments-' . $block['id'];
     <?php if(get_field('heading')) { ?>
       <h1 class="mb-2"><?php the_field('heading') ?></h1>
     <?php } ?>
-
+    
     <?php if(get_field('subheading')) { ?>
-      <h2 style="color: <?php the_field('subheading_color') ?>;"><?php the_field('subheading') ?></h2>
+      <h2 style="color: <?php the_field('subheading_color') ?>; margin-top: <?php echo get_field('heading') ? '' : '0' ?>;"><?php the_field('subheading') ?></h2>
     <?php } ?>
 
     <div class="row justify-content-center">
@@ -38,7 +38,7 @@ $id = 'customheadingandarguments-' . $block['id'];
               </div>
             </div>
 
-            <?php if ($i % 4 == 0) { ?>
+            <?php if ($i % 4 == 0 && count(get_field('repeater')) > 4 ) { ?>
               </div>
               <div class="row justify-content-center">
             <?php } ?>
@@ -73,10 +73,6 @@ $id = 'customheadingandarguments-' . $block['id'];
     padding: 1rem;
     background-color: #EFEFEF;
     text-align: center;
-  }
-
-  #<?php echo $id; ?> img {
-    /* width: 200px; */
   }
 
   #<?php echo $id; ?> .row:first-of-type {

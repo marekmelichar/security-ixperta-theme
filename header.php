@@ -26,12 +26,14 @@
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col p-0">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<a href="<?php echo esc_url( 'ixperta.com' ); ?>">
 					<div class="logo">
 						<div class="svg">
 							<?php get_template_part('svg/logo_ixperta.svg'); ?>
 						</div>
 					</div>
+				</a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<div class="sublogo">
 						<div class="svg">
 							<?php get_template_part('svg/logo_bezpecnost.svg'); ?>
@@ -60,9 +62,9 @@
 				</div>
 
 				<div class="hamburger">
-					<div class="mobile-logo">
-						<a href="/"><?php get_template_part('svg/logo_ixperta_bile.svg'); ?></a>
-					</div>
+					<!-- <div class="mobile-logo">
+						<a href="/"><?php //get_template_part('svg/logo_ixperta_bile.svg'); ?></a>
+					</div> -->
 					<div class="mobile-menu-trigger">
 						<i class="fas fa-bars"></i>
 					</div>

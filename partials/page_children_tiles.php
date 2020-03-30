@@ -26,7 +26,15 @@
             <div class="col-md-3 child-page__tile">
               <div class="tile-img" style="background-image: url(<?php echo $background_image['url']; ?>);">
                 <div class="tile-img-overlay"></div>
-                <div class="tile-svg"><?php get_template_part('svg/' . get_field('svg_icon') . '.svg'); ?></div>
+                <?php if($icon): ?>
+                  <div class="svg img tile-svg">
+                    <?php if (strpos($icon['url'], '.svg') == true) { ?>
+                      <?php echo file_get_contents($icon['url']); ?>
+                    <?php } else { ?>
+                      <img src="<?php echo $icon['url'] ?>" alt="<?php echo $icon['alt'] ?>">
+                    <?php } ?>
+                  </div>
+                <?php endif; ?>
               </div>
               <div class="tile-body">
                 <div class="heading"><?php echo the_field('heading'); ?></div>

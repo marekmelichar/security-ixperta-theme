@@ -1051,9 +1051,9 @@ header.header.hide {
 }
 
 .primary-menu .primary.nav {
-  width: 100%;
+  /* width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; */
 }
 
 .primary-menu ul li {
@@ -2315,22 +2315,11 @@ html[lang="de-DE"] #helpWidget h2.rotate {
 }
 
 #products .content {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 #products .arrow-green-circle {
   margin: 1rem auto;
-}
-
-#products .products_wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-#products .products_wrapper .product {
-  width: 20rem;
 }
 
 #products .container {
@@ -2955,8 +2944,6 @@ a.arrow-green-circle {
 }
 
 .child-page__tile .tile-svg {
-  width: 90px;
-  height: 90px;
   z-index: 2;
 }
 
@@ -3108,6 +3095,7 @@ a.arrow-green-circle {
 }
 
 .reference-tiles__tile {
+  margin: 0 0 4rem 0;
   position: relative;
   text-align: center;
 }
@@ -3416,3 +3404,22 @@ a.reference-tiles__tile:before {
 
 
 
+.row [class*="col"] .argument {
+  padding: 1rem;
+}
+
+.row:nth-child(even) [class*="col"]:nth-child(1n) .argument {
+  background-color: #EFEFEF;
+}
+
+.row:nth-child(even) [class*="col"]:nth-child(2n) .argument {
+  background-color: #DFDFDF;
+}
+
+.row:nth-child(odd) [class*="col"]:nth-child(1n) .argument {
+  background-color: #DFDFDF;
+}
+
+.row:nth-child(odd) [class*="col"]:nth-child(2n) .argument {
+  background-color: #EFEFEF;
+}

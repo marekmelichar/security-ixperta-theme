@@ -9,6 +9,7 @@
 			equalheight('.reference-tiles__tile h2');
 			equalheight('#about_us .about_us_tile .content');
 			// equalheight('#about_us .about_us_tile .content');
+			equalheight('.row [class*="col"] .argument');
 		})
 
 
@@ -367,7 +368,7 @@
 				speed: 300,
 				autoplay: true,
 				autoplaySpeed: 4000,
-				slidesToShow: 5,
+				slidesToShow: 4,
 				prevArrow: $('#references .prevArrow'),
 				nextArrow: $('#references .nextArrow')
 			})

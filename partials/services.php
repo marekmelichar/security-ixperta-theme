@@ -37,8 +37,12 @@
                 </div>
               <?php endif; ?>
               <?php if($icon): ?>
-                <div class="svg">
-                  <?php get_template_part('svg/' . $icon . '.svg'); ?>
+                <div class="svg img">
+                  <?php if (strpos($icon['url'], '.svg') == true) { ?>
+                    <?php echo file_get_contents($icon['url']); ?>
+                  <?php } else { ?>
+                    <img src="<?php echo $icon['url'] ?>" alt="<?php echo $icon['alt'] ?>">
+                  <?php } ?>
                 </div>
               <?php endif; ?>
               <div class="content">

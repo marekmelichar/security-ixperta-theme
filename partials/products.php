@@ -9,15 +9,10 @@
   </div>
 
   <?php if( have_rows('bg_color_stripe_repeater_2') ): ?>
+    <?php $i = 1 ?>
 
     <div class="container bg_color_stripe_repeater">
-      
-      <!-- <div class="prevArrow">
-        <i class="fas fa-chevron-left"></i>
-      </div> -->
-
-      <div class="_row products_wrapper">
-
+      <div class="row justify-content-center products_wrapper">
 
       <?php while( have_rows('bg_color_stripe_repeater_2') ): the_row();
 
@@ -30,12 +25,15 @@
 
         ?>
 
-        <div class="_col product text-center">
-        <?php if($icon): ?>
-          <div class="svg img">
-            <?php //get_template_part('svg/' . $icon . '.svg'); ?>
-            <img src="<?php echo $icon['url'] ?>" alt="<?php echo $icon['alt'] ?>">
-          </div>
+        <div class="col-md<?php echo count(get_field('repeater')) == 1 ? "" : "-4" ?> product text-center">
+          <?php if($icon): ?>
+            <div class="svg img">
+              <?php if (strpos($icon['url'], '.svg') == true) { ?>
+                <?php echo file_get_contents($icon['url']); ?>
+              <?php } else { ?>
+                <img src="<?php echo $icon['url'] ?>" alt="<?php echo $icon['alt'] ?>">
+              <?php } ?>
+            </div>
           <?php endif; ?>
 
           <?php if($heading): ?>
@@ -52,31 +50,20 @@
             </div>
           <?php endif; ?>
           
-          <?php if(!$href_text && $href): ?>
-            <!-- <a class="arrow-green-circle" href="<?php echo $href; ?>">
-              <i class="fas fa-chevron-right"></i>
-            </a> -->
-          <?php elseif(!$href_text && !$href): ?>
-          <?php else: ?>
-            <a href="<?php echo $href; ?>" class="__btn-more-info">
-              <?php echo $href_text; ?>
-            </a>
-          <?php endif; ?>
-
-
+          <a href="<?php echo $href; ?>" class="__btn-more-info">
+            <?php echo $href_text; ?>
+          </a>
         </div>
 
+        <?php if ($i % 3 == 0 && count(get_field('repeater')) > 4 ) { ?>
+          </div>
+          <div class="row justify-content-center">
+        <?php } ?>
 
-
+        <?php $i++; ?>
       <?php endwhile; ?>
-
       
     </div>
-        
-    <!-- <div class="nextArrow">
-      <i class="fas fa-chevron-right"></i>
-    </div> -->
-    
   </div>
 
   <?php endif; ?>
