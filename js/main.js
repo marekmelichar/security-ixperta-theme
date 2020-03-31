@@ -339,9 +339,9 @@
 			$('.hamburger').toggleClass('open')
 		})
 
-		$('.hamburger.open .primary-menu a').on('click', function(e) {
-			e.preventDefault()
-		})
+		// $('.hamburger.open .primary-menu a').on('click', function(e) {
+		// 	e.preventDefault()
+		// })
 
 
 
