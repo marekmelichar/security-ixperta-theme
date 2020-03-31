@@ -221,6 +221,11 @@
     right: 1rem;
   }
 
+  .hamburger.open .sub-menu {
+    margin: 0;
+    left: 50%;
+  }
+
   .mobile-menu-trigger {
     font-size: 1.75rem;
     text-align: right;
@@ -534,6 +539,11 @@
     z-index: 101;
     top: 1rem;
     right: 1rem;
+  }
+
+  .hamburger.open .sub-menu {
+    margin: 0;
+    top: 44px;
   }
 
   .mobile-menu-trigger {

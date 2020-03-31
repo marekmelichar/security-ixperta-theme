@@ -13,9 +13,9 @@
       <h2><?php the_title(); ?></h2>
     </div>
 
-    <a class="link" href="<?php the_permalink(); ?>">
+    <!-- <a class="link" href="<?php //the_permalink(); ?>">
       <div class="arrow-green-circle">
         <i class="fas fa-chevron-right"></i>
       </div>
-    </a>
+    </a> -->
 </div>

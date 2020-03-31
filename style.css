@@ -1046,6 +1046,7 @@ header.header.hide {
 .primary-menu {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   height: 60px;
   color: #001A70;
 }

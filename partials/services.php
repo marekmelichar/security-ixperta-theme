@@ -1,4 +1,4 @@
-<article id="services" class="<?php the_field('bg_color_class'); ?>" style="background: <?php the_field('bg_color') ?>;">
+<article id="services" class="<?php the_field('bg_color_class'); ?>" style="background: <?php the_field('bg_color_services') ?>;">
 
   <div class="container">
     <div class="row">
