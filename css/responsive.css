@@ -427,6 +427,10 @@
 
 @media (max-width: 767px) {
 
+  #dropdown_sipka {
+    top: 8px;
+  }
+
   #about_us .about_us_tile {
     margin-bottom: 1rem;
   }
@@ -545,16 +549,6 @@
     margin: 0;
     top: 44px;
   }
-
-  /* #mobile_menu .menu-item-has-children ~ .sub-menu {
-    visibility: hidden;
-    opacity: 0;
-  } */
-
-  /* #mobile_menu .menu-item-has-children.open ~ .sub-menu {
-    visibility: visible;
-    opacity: 1;
-  } */
 
   .mobile-menu-trigger {
     font-size: 1.75rem;
@@ -855,6 +849,11 @@
 
 
 @media (max-width: 321px) {
+
+  #dropdown_sipka {
+    right: -6px;
+    top: 8px;
+  }
 
   #top_info_navbar_repeater ul.right-side-informations {
     font-size: 0.6rem;

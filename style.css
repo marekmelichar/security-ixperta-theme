@@ -416,7 +416,7 @@ a img.aligncenter {
 #dropdown_sipka {
   fill: #fff;
   position: absolute;
-  right: 60px;
+  right: 0;
   top: 0;
   width: 20px;
   height: 20px;
