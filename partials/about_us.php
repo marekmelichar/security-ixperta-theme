@@ -1,4 +1,4 @@
-<article id="about_us" class="<?php echo get_field('show_tiles') ? "show_tiles" : "" ?>">
+<article id="about_us" class="<?php echo get_field('show_tiles') ? "show_tiles" : "" ?>" style="background-color: <?php echo get_field('bg_color') ? the_field('bg_color') : "" ?>; color: <?php echo get_field('text_color') ? the_field('text_color') : "" ?>; ">
   <div class="container">
 
     <?php if(get_field('show_tiles')) { ?>
@@ -31,18 +31,18 @@
       </div>
     <?php } ?>
 
-    <div class="row">
-      <div class="col">
-        <?php if(get_field('about_us_heading')) { ?>
-          <h1><?php echo the_field('about_us_heading'); ?></h1>
-        <?php } ?>
-        <?php if(get_field('about_us_subheading')) { ?>
-          <h2><?php echo the_field('about_us_subheading'); ?></h2>
-        <?php } ?>
+    <?php if(get_field('about_us_heading')) { ?>
+      <div class="row">
+        <div class="col">
+            <h1><?php echo the_field('about_us_heading'); ?></h1>
+          <?php if(get_field('about_us_subheading')) { ?>
+            <h2><?php echo the_field('about_us_subheading'); ?></h2>
+          <?php } ?>
+        </div>
       </div>
-    </div>
+    <?php } ?>
 
-    <div class="row members">
+    <div class="row justify-content-center members">
 
       <?php $index = 1; ?>
 
@@ -60,21 +60,21 @@
 
           ?>
 
-            <?php if(($index % 3) == 1) { ?>
+            <?php if(($index % 2) == 1) { ?>
               </div>
-              <div class="row members">
+              <div class="row justify-content-center members">
             <?php } ?>
 
-              <div class="col-md-<?php echo 12 / $count ?> member <?php if($count == 1) { ?>only_one_col<?php } ?>">
+              <div class="col-md member <?php if($count == 1) { ?>only_one_col<?php } ?>">
                 <div class="row">
                   <div class="col-md-4">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                   </div>
                   <div class="col-md-8">
-                    <h2>
+                    <h2 style="color: <?php echo get_sub_field('h2_color') ? get_sub_field('h2_color') : "" ?>;">
                       <?php echo $name; ?>
                       <div class="phone">
-                        <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                        <a href="tel:<?php echo $phone; ?>" style="color: <?php echo get_sub_field('h2_color') ? get_sub_field('h2_color') : "" ?>;"><?php echo $phone; ?></a>
                       </div>
                     </h2>
                     <div class="desc"><?php echo $description; ?></div>

@@ -1547,6 +1547,10 @@ html[lang="de-DE"] #helpWidget h2.rotate {
   color: #001A70;
 }
 
+#about_us .mail a {
+  text-decoration: underline;
+}
+
 #about_us .phone a {
   color: #fff;
 }

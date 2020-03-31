@@ -26,9 +26,12 @@
 					</div>
 				</div>
 
-				<?php get_template_part('partials/about_us_contact_page'); ?>
+				<?php get_template_part('partials/about_us'); ?>
+				<?php //get_template_part('partials/about_us_contact_page'); ?>
 
 				<?php get_template_part('partials/about_us_no_photos'); ?>
+
+				<?php get_template_part('partials/why_connect_with_us'); ?>
 
 				<?php get_template_part('partials/references'); ?>
 

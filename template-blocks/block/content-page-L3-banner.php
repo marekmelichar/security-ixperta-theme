@@ -20,18 +20,22 @@ $id = 'pageL3banner-' . $block['id'];
     <div class="row no-gutters">
       <div class="col-md image_or_svg" style="background-image: url(<?php echo $image['url']; ?>);"></div>
       <div class="col-md content">
-        <div class="top">
-          <div class="icon">
-            <?php echo file_get_contents($icon['url']); ?>
-          </div>
+        <div class="top" style="background-color: <?php echo get_field('top_bg_color') ? the_field('top_bg_color') : "" ?>">
+          <?php if($icon) { ?>
+            <div class="icon">
+              <?php echo file_get_contents($icon['url']); ?>
+            </div>
+          <?php } ?>
           <h1><?php echo get_field('page_L3_heading'); ?></h1>
           <div class="desc">
             <?php echo get_field('page_L3_desc'); ?>
           </div>
         </div>
-        <div class="bottom">
-          <?php echo get_field('page_L3_bottom_content'); ?>
-        </div>
+        <?php if(get_field('page_L3_bottom_content')) { ?>
+          <div class="bottom">
+            <?php echo get_field('page_L3_bottom_content'); ?>
+          </div>
+        <?php } ?>
       </div>
     </div>
   </div>
