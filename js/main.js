@@ -343,6 +343,22 @@
 		// 	e.preventDefault()
 		// })
 
+		var mobileMenuDropdown = $('#mobile_menu .menu-item-has-children');
+		mobileMenuDropdown.prepend("\n      <svg id=\"dropdown_sipka\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12.87\" height=\"8.693\" viewBox=\"0 0 12.87 8.693\">\n      \t<defs>\n      \t\t<style>\n      \t\t\t#dropdown_sipka2 .a {\n      \t\t\t\tfill: #fff;\n      \t\t\t\tfill-rule: evenodd;\n      \t\t\t}\n      \t\t</style>\n      \t</defs><path class=\"a\" d=\"M12.87,0,6.436,8.693,0,0Z\"/></svg>\n    ");
+
+		var mobileMenuDropdownToggle = $('#mobile_menu .menu-item-has-children #dropdown_sipka');
+
+		mobileMenuDropdownToggle.on('click', function (e) {
+			e.preventDefault();
+
+			$(this).parent().toggleClass('open')
+
+			// $('#mobile_menu .menu-item-has-children').toggleClass('open');
+			// $('#menu-mobile-menu-2 .menu-item-has-children').unbind('mouseenter mouseleave')
+			// $('#menu-mobile-menu-2 .menu-item-has-children').off('hover')
+			// $('#menu-mobile-menu-2 .menu-item-has-children').unbind()
+		});
+
 
 
 

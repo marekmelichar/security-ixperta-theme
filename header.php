@@ -68,15 +68,17 @@
 					<div class="mobile-menu-trigger">
 						<i class="fas fa-bars"></i>
 					</div>
+
 					<div class="mobile-menu-close">
 						<?php get_template_part('svg/krizek.svg'); ?>
 					</div>
+
 					<?php
 						wp_nav_menu(
 							array(
 								'theme_location'	=> 'primary',
 								'container_class'	=> 'primary-menu',
-								'menu_id'         => 'primary_menu',
+								'menu_id'         => 'mobile_menu',
 								'menu_class'      => 'primary nav'
 								)
 						);

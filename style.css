@@ -394,10 +394,10 @@ a img.aligncenter {
     opacity: 0;
 }
 
-.primary-menu .menu-item-has-children:hover ul.sub-menu {
+/* .primary-menu .menu-item-has-children:hover ul.sub-menu {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .primary-menu .menu-item-has-children ul.sub-menu li a,
 .primary-menu .menu-item-has-children:hover ul.sub-menu li a {
@@ -411,6 +411,26 @@ a img.aligncenter {
 .primary-menu ul.sub-menu li a {
     color: #fff;
     font-size: 0.875rem;
+}
+
+#dropdown_sipka {
+  fill: #fff;
+  position: absolute;
+  right: 60px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 9;
+}
+
+#mobile_menu .menu-item-has-children .sub-menu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#mobile_menu .menu-item-has-children.open .sub-menu {
+  visibility: visible;
+  opacity: 1;
 }
 
 

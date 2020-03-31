@@ -546,6 +546,16 @@
     top: 44px;
   }
 
+  /* #mobile_menu .menu-item-has-children ~ .sub-menu {
+    visibility: hidden;
+    opacity: 0;
+  } */
+
+  /* #mobile_menu .menu-item-has-children.open ~ .sub-menu {
+    visibility: visible;
+    opacity: 1;
+  } */
+
   .mobile-menu-trigger {
     font-size: 1.75rem;
     text-align: right;
