@@ -352,6 +352,7 @@
 			e.preventDefault();
 
 			$(this).parent().toggleClass('open')
+			$(this).parent().siblings().removeClass('open')
 
 			// $('#mobile_menu .menu-item-has-children').toggleClass('open');
 			// $('#menu-mobile-menu-2 .menu-item-has-children').unbind('mouseenter mouseleave')

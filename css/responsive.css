@@ -226,6 +226,10 @@
     left: 50%;
   }
 
+  .hamburger.open .sub-menu a {
+    color: #001A70;
+  }
+
   .mobile-menu-trigger {
     font-size: 1.75rem;
     text-align: right;
@@ -548,6 +552,10 @@
   .hamburger.open .sub-menu {
     margin: 0;
     top: 44px;
+  }
+
+  .hamburger.open .sub-menu a {
+    color: #001A70;
   }
 
   .mobile-menu-trigger {
