@@ -394,10 +394,10 @@ a img.aligncenter {
     opacity: 0;
 }
 
-/* .primary-menu .menu-item-has-children:hover ul.sub-menu {
+.primary-menu .menu-item-has-children:hover ul.sub-menu {
     visibility: visible;
     opacity: 1;
-} */
+}
 
 .primary-menu .menu-item-has-children ul.sub-menu li a,
 .primary-menu .menu-item-has-children:hover ul.sub-menu li a {
